@@ -1,0 +1,28 @@
+name: atsf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - pyarrow
+  - statsmodels
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - nbformat
+  - pytest
+  - pip
+  - pip:
+      - yfinance
+      - pmdarima
+      - arch
+      - xgboost
+      - optuna
+      - shap
+      - tensorflow           # optional, heavy - LSTM/GRU only; remove to skip
+      - prophet              # optional - Task 3.2 secondary benchmark
+      - tabulate
